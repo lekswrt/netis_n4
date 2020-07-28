@@ -113,4 +113,4 @@ static void __init a3002ru_setup(void)
 }
 
 MIPS_MACHINE(RTL8197_MACH_A3002RU, "A3002RU", "TOTOLINK A3002RU",
-			 a3002rusetup);
+			 a3002ru_setup);
