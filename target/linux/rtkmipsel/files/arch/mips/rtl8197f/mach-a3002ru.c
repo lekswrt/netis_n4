@@ -34,11 +34,11 @@ extern void rtl819x_gpio_pin_set_val(u32 pin, unsigned val);
 #define BSP_8367R_RST_PIN		BSP_GPIO_PIN_H2
 #define BSP_8367R_I2C_PIN1		BSP_GPIO_PIN_C2
 #define BSP_8367R_I2C_PIN2		BSP_GPIO_PIN_C3
-#else
 #define BSP_RESET_BTN_PIN		BSP_GPIO_PIN_C3
 #define BSP_WPS_BTN_PIN			BSP_GPIO_PIN_C1
 #define BSP_RESET_LED_PIN		BSP_GPIO_PIN_B7
 #define BSP_WPS_LED_PIN			BSP_GPIO_PIN_B7
+#else
 #endif
 
 static struct gpio_led a3002ru_leds_gpio[] __initdata = {
