@@ -43,7 +43,7 @@ extern void rtl819x_gpio_pin_set_val(u32 pin, unsigned val);
 
 static struct gpio_led a3002ru_leds_gpio[] __initdata = {
 	{
-		.name		= "rtl819x:green:sys",
+		.name		= "rtl819x:yellow:sys",
 		.gpio		= BSP_WPS_LED_PIN,
 		.active_low	= 1,
 	}

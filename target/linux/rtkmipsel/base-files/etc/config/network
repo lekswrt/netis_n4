@@ -17,7 +17,7 @@ config switch 'eth0'
 config switch_vlan
 	option vlan '1'
 	option device 'eth0'
-	option ports '0 1 2 6t'
+	option ports '0 1 2 3 6t'
 
 config interface 'lan'
 	option type 'bridge'
@@ -40,6 +40,6 @@ config interface 'wan6'
 config switch_vlan
 	option device 'eth0'
 	option vlan '2'
-	option ports '3 6t'
+	option ports '4 6t'
 
 

@@ -27,6 +27,11 @@ ac10u)
 	uci set wireless.@wifi-iface[0].ssid='AC10U 5G'
 	uci set wireless.@wifi-iface[1].ssid='AC10U 2G'
 	;;
+a3002ru)
+	uci set system.@system[0].hostname=A3002RU
+	uci set wireless.@wifi-iface[0].ssid='A3002RU 5G'
+	uci set wireless.@wifi-iface[1].ssid='A3002RU 2G'
+	;;
 *)
 	;;
 esac

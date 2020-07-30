@@ -17,6 +17,9 @@ get_status_led() {
 	ac10u)
 		status_led="ac10u:green:led0"
 		;;
+	a3002ru)
+		status_led="a3002ru:yellow:led0"
+		;;
 	esac
 }
 
