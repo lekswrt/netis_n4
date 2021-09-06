@@ -420,7 +420,7 @@ static int __init get_hw_part(char *str)
 
 	sscanf(str, "0x%x", &hw_part);
 	HW_SETTING_OFFSET = hw_part;
-	//printk("get_hw_part = %x \n",HW_SETTING_OFFSET);
+	printk("get_hw_part = %x \n",HW_SETTING_OFFSET);
         return 1;
 }
 __setup("hwpart=", get_hw_part);

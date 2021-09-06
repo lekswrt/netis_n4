@@ -161,7 +161,7 @@ static void PCIE_Device_PERST(unsigned int portnum)
 	sys_enable = SYS_ENABLE;
 
 	REG32(sys_enable) &= ~(1<<1);    //perst=0 off.
-	mdelay(300);  					//PCIE standadrd: poweron: 100us, after poweron: 100ms
+	mdelay(500); //300 					//PCIE standadrd: poweron: 100us, after poweron: 100ms
 	REG32(sys_enable) |=  (1<<1);   //PERST=1
 
 }

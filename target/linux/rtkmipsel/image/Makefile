@@ -15,7 +15,7 @@ endif
 ifeq ($(CONFIG_TARGET_rtkmipsel_rtl8197f_ac10uV2),y)
 RAMFS_MAX_SIZE = 8192000	# 0x00800000-0x00030000
 endif
-ifeq ($(CONFIG_TARGET_rtkmipsel_rtl8197f_a3002ru),y)
+ifeq ($(CONFIG_TARGET_rtkmipsel_rtl8197f_netisn4),y)
 RAMFS_MAX_SIZE = 8192000	# 0x00800000-0x00030000
 endif
 
@@ -35,9 +35,9 @@ define mkcmdline
 endef
 endif
 
-ifeq ($(CONFIG_TARGET_rtkmipsel_rtl8197f_a3002ru),y)
+ifeq ($(CONFIG_TARGET_rtkmipsel_rtl8197f_netisn4),y)
 define mkcmdline
-	board=$(shell echo $(1) | tr a-z A-Z) console=$(2),$(3) mtdparts=m25p80:112k(boot),16k(CFG),-(firmware)
+	board=$(shell echo $(1) | tr a-z A-Z) console=$(2),$(3) mtdparts=m25p80:128k(boot),64k(CFG),-(firmware)
 endef
 endif
 
@@ -154,8 +154,8 @@ endif
 ifeq ($(CONFIG_TARGET_rtkmipsel_rtl8197f_ac10uV2),y)
 $(eval $(call SingleProfile,ac10uV2,ttyS0,38400,0x80500000,20000,20000))
 endif
-ifeq ($(CONFIG_TARGET_rtkmipsel_rtl8197f_a3002ru),y)
-$(eval $(call SingleProfile,a3002ru,ttyS0,38400,0x80500000,20000,20000))
+ifeq ($(CONFIG_TARGET_rtkmipsel_rtl8197f_netisn4),y)
+$(eval $(call SingleProfile,netisn4,ttyS0,38400,0x80500000,30000,30000))
 endif
 
 define Image/Build/Initramfs
